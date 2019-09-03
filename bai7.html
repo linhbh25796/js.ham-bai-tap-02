@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+    Value of a: <input id="first">
+    Value of b: <input id="second"></br></br>
+    <button onclick="swap()">Swap</button>
+    </br></br>
+    Value of a: <input id="result1">
+    Value of b: <input id="result2">
+</body>
+<script>
+    function swap(a, b,c) {
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c=a;
+        a=b;
+        b=c;
+        document.getElementById("result1").value= a;
+        document.getElementById("result2").value= b;
+    }
+</script>
+</html>

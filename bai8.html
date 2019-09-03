@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+
+</body>
+<script>
+    var maxArray = prompt("Import length of array: ");
+
+    function reverse() {
+        if (maxArray == parseInt(maxArray) && maxArray > 0) {
+            let array = [];
+            for (let i = 0; i < maxArray; i++) {
+                array.push(prompt("Nhập: "));
+            }
+            document.write(array);
+            document.write("<br>");
+            let reserveArray = array.reverse().join("-");
+            document.write("Array after reverse: " + reserveArray);
+        }else {
+            alert("Please input a number.");
+        }
+    }
+
+    reverse();
+</script>
+</html>

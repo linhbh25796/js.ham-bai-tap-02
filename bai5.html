@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+</body>
+<script>
+    numA = prompt("Import number A: ");
+    numB = prompt("Import number B: ");
+    numC = prompt("Import number C: ");
+
+    function inputNumber(numA, numB, numC) {
+
+        var minNumber = numA;
+        if (numA > numB) {
+            minNumber = numB;
+        }
+        if (numB > numC) {
+            minNumber = numC;
+        }
+
+        alert(minNumber);
+    }
+    inputNumber(numA,numB,numC);
+</script>
+</html>
